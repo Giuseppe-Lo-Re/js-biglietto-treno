@@ -1,7 +1,7 @@
 
 // Ask to the user kilometers numbers who he wants to travel, passenger's age and convert in numbers:
-const userKm = parseInt ( prompt( "Quanti chilometri vorresti percorrere?"));
-const userAge = parseInt (prompt("Quanti anni hai?"));
+const userKm = parseInt(prompt( "Quanti chilometri vorresti percorrere?"));
+const userAge = parseInt(prompt("Quanti anni hai?"));
 
 
 // calculate the total price of the trip, according to these rules:
@@ -10,11 +10,11 @@ const userSubtotal = userKm * 0.21;
 
 
 //  a 20% discount must be applied for minors
-discountOver18 = userSubtotal * 20 / 100;
+let discountOver18 = userSubtotal * 20 / 100;
 
 
 //  a 40% discount must be applied for those over 65:
-discountOver65 = userSubtotal * 40 / 100;
+let discountOver65 = userSubtotal * 40 / 100;
 
 
 // The output of the final price must be put out with a maximum of two decimals:
